@@ -1,7 +1,7 @@
-value = input("enter a number or string : ")
-if value.isdigit():
+Value = input("Enter a number or string : ")
+if Value.isdigit():
 
-    n = int(value)
+    n = int(Value)
     original = n
     reverse = 0
 
@@ -11,12 +11,12 @@ if value.isdigit():
         n = n // 10   
 
     if original == reverse :
-        print("number of string is a palindrome")
+        print("It is a palindrome number")
     else:
-        print("number or string is not a palindrome")
+        print("It is NOT a palindrome number")
 
 else:
-    original = value
+    original = Value
     reverse = "" 
     for ch in original:
         reverse = ch + reverse
