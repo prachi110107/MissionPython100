@@ -1,3 +1,4 @@
+'''To find wheather a given number or string is a palindrome or not'''
 Value = input("Enter a number or string : ")
 if Value.isdigit():
 
@@ -20,6 +21,7 @@ else:
     reverse = "" 
     for ch in original:
         reverse = ch + reverse
+        
     if original == reverse:
         print("It is a Palindrome String")
     else:
