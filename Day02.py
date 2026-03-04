@@ -1,5 +1,6 @@
-'''REVERSING A NUMBER'''
+'''Reversing a number'''
 n = int(input("Enter a number : "))
+
 reverse = 0
 while n > 0:
     digit = n % 10     
