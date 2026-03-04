@@ -1,3 +1,5 @@
+'''To find wheather a given number is an armstrong or not'''
+
 n = int(input("Enter a number : "))
 original = n
 digits = len(str(n))
@@ -6,6 +8,7 @@ while n > 0:
     digit = n % 10
     total = total + digit ** digits
     n = n // 10
+    
 if total == original:
     print("It is an Armstrong Number")
 else:
