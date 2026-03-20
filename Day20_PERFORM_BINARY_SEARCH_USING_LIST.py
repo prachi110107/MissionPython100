@@ -1,5 +1,5 @@
 '''
-Day20 :- Binary Search
+Day20 :- Binary Search using list 
 Difficulty :- Medium
 Concepts :- Sorted list , Divide and conquer , Loop + condition , Index calculation
 Approach 

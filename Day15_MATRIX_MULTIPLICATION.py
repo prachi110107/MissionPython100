@@ -3,15 +3,15 @@ Day15 :- Matrix multiplicaion
 Difficulty :- Medium
 Concepts :- 2D Lists , Nested loops 
 Approach 
--> Input both matrices
--> Create result matrix with 0 values
--> Use three loops (i, j, k)
+Step 1 : Input both matrices
+Step 2 : Create result matrix with 0 values
+Step 3 : Use three loops (i, j, k)
     i → row of first matrix
     j → column of second matrix
     k → for multiplication
-->Multiply row elements with column elements
+Step 4 : Multiply row elements with column elements
     result[i][j] = Σ (matrix1[i][k] * matrix2[k][j])
-->Add all products → store in result
+Step 5 : Add all products → store in result
 
 '''
 # Input number of rows
@@ -39,7 +39,7 @@ for i in range(rows):            # Loop for rows
     for j in range(cols):        # Loop for columns
         element = int(input())   # Take element input
         row.append(element)      # Add element to row
-    matrix1.append(row)          # Add completed row to matrix2
+    matrix2.append(row)          # Add completed row to matrix2
     
 
 result = []                      # Initialize result matrix
@@ -50,7 +50,7 @@ for i in range(rows):            # Loop through rows of matrix1
         sum = 0                  # Initialize sum for each position
         
         for k in range(cols):    # Loop for multiplication
-            
+
             # Multiply corresponding elements and add
             sum = sum + matrix1[i][k] * matrix2[k][j]
         row.append(sum)          # Store computed value in row
