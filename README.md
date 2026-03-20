@@ -18,7 +18,7 @@ In this challenge, I solve Python problems daily to improve my programming skill
 
 ## Motivation
 
-Consistency > Motivation 💪  
+Consistency > Motivation 
 Small progress daily leads to big success.
 
 ###  Connect With Me
