@@ -1,4 +1,8 @@
-'''To find wheather a given number is an armstrong or not'''
+'''Day14:- Matrix addition
+Difficulty:- Easy 
+Concept:- 2D Lists , Nested loops
+Approach:
+Step 1 : '''
 
 n = int(input("Enter a number : "))
 original = n

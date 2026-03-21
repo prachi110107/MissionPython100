@@ -1,4 +1,8 @@
-'''Wheather a given number is prime or not'''
+'''Day14:- Matrix addition
+Difficulty:- Easy 
+Concept:- 2D Lists , Nested loops
+Approach:
+Step 1 : '''
 
 n=int(input("Enter number of your choice : "))
 for i in range(2,n):

@@ -1,4 +1,8 @@
-'''Program to count number of consonant , vowels , and digits '''
+'''Day14:- Matrix addition
+Difficulty:- Easy 
+Concept:- 2D Lists , Nested loops
+Approach:
+Step 1 :  '''
 
 n = str(input("Enter The String:"))
 digits = 0

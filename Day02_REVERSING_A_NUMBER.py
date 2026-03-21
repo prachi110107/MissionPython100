@@ -1,4 +1,8 @@
-'''Reversing a number'''
+'''Day14:- Matrix addition
+Difficulty:- Easy 
+Concept:- 2D Lists , Nested loops
+Approach:
+Step 1 : '''
 n = int(input("Enter a number : "))
 
 reverse = 0

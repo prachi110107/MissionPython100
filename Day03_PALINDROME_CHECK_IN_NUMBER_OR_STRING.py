@@ -1,4 +1,8 @@
-'''To find wheather a given number or string is a palindrome or not'''
+'''Day14:- Matrix addition
+Difficulty:- Easy 
+Concept:- 2D Lists , Nested loops
+Approach:
+Step 1 : '''
 Value = input("Enter a number or string : ")
 if Value.isdigit():
 

@@ -1,4 +1,8 @@
-'''Program to find the second largest number fromn a list'''
+'''Day14:- Matrix addition
+Difficulty:- Easy 
+Concept:- 2D Lists , Nested loops
+Approach:
+Step 1 : '''
 
 n=int(input("Enter number of elements : "))
 

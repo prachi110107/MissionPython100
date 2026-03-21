@@ -1,4 +1,8 @@
-''' Program to print fibonacci series'''
+''' Day14:- Matrix addition
+Difficulty:- Easy 
+Concept:- 2D Lists , Nested loops
+Approach:
+Step 1 : '''
 
 n=int(input("Enter number of terms : "))
 a=0

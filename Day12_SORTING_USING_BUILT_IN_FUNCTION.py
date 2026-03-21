@@ -1,4 +1,8 @@
-'''Program to sort a list without using built in sort'''
+'''Day14:- Matrix addition
+Difficulty:- Easy 
+Concept:- 2D Lists , Nested loops
+Approach:
+Step 1 : '''
 
 n=int(input("Enter the no of elements : "))
 

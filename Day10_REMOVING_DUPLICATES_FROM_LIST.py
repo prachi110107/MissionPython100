@@ -1,4 +1,8 @@
-'''Removing duplicates from a given string or list'''
+'''Day14:- Matrix addition
+Difficulty:- Easy 
+Concept:- 2D Lists , Nested loops
+Approach:
+Step 1 : '''
 
 '''For string'''
 S=input("Enter a string : ")

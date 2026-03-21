@@ -1,4 +1,8 @@
-'''Program to find GCD and LCM'''
+'''Day14:- Matrix addition
+Difficulty:- Easy 
+Concept:- 2D Lists , Nested loops
+Approach:
+Step 1 : '''
 n1 = int(input("Enter first number : "))
 n2 = int(input("Enter second number : "))
 
