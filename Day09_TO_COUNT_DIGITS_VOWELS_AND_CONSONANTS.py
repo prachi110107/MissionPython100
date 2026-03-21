@@ -1,8 +1,25 @@
-'''Day14:- Matrix addition
+'''
+Day09:- To count digits , vowels and consonants
 Difficulty:- Easy 
-Concept:- 2D Lists , Nested loops
+Concept:- Strings
+• Loop (for)
+• Conditional statements (if-elif)
+• String functions:
+
+isdigit()
+isalpha()
+lower()
 Approach:
-Step 1 :  '''
+Step 1 : Take a string input from the user
+Initialize counters for digits, vowels, and consonants
+Traverse each character in the string
+Check:
+If digit → increase digit count
+If vowel → increase vowel count
+If alphabet but not vowel → consonant
+Print the counts
+
+ '''
 
 n = str(input("Enter The String:"))
 digits = 0

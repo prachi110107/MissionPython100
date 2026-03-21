@@ -1,8 +1,24 @@
-'''Day14:- Matrix addition
-Difficulty:- Easy 
-Concept:- 2D Lists , Nested loops
+'''
+Day08:- To find GCD and LCM 
+Difficulty:- Medium
+Concept:- Loops (while)
+• Conditional statements (if-else)
+• Euclidean Algorithm
+• Arithmetic operations
+• Integer division (//)
 Approach:
-Step 1 : '''
+Step 1 :For GCD:
+Take two numbers
+Use repeated subtraction method
+Keep subtracting smaller from larger
+When both become equal → that is GCD
+For LCM:
+
+Use formula:
+
+LCM = (n1 × n2) / GCD
+
+ '''
 n1 = int(input("Enter first number : "))
 n2 = int(input("Enter second number : "))
 

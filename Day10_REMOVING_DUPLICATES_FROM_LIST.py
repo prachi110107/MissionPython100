@@ -1,8 +1,24 @@
-'''Day14:- Matrix addition
-Difficulty:- Easy 
-Concept:- 2D Lists , Nested loops
+'''
+Day10:- Remove duplicates from list
+Difficulty:- Medium
+Concept:- Strings
+• Lists
+• Loops (for)
+• Membership checking (not in)
+• Building new result
 Approach:
-Step 1 : '''
+Step 1 : For String:
+Take input string
+Traverse each character
+Add only if not already present
+Build new string
+For List:
+Take number of elements
+Store elements in list
+Traverse list
+Add only unique elements to new list
+
+'''
 
 '''For string'''
 S=input("Enter a string : ")
