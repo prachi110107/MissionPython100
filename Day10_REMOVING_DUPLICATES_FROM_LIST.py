@@ -1,22 +1,18 @@
 '''
 Day10:- Remove duplicates from list
 Difficulty:- Medium
-Concept:- Strings
-• Lists
-• Loops (for)
-• Membership checking (not in)
-• Building new result
+Concept:- Strings , Lists , Loops , Membership checking , Building new result
 Approach:
-Step 1 : For String:
-Take input string
-Traverse each character
-Add only if not already present
-Build new string
+For String:
+Step 1 : Take input string
+Step 2 : Traverse each character
+Step 3 : Add only if not already present
+Step 4 : Build new string
 For List:
-Take number of elements
-Store elements in list
-Traverse list
-Add only unique elements to new list
+Step 1 : Take number of elements
+Step 2 : Store elements in list
+Step 3 : Traverse list
+Step 4 : Add only unique elements to new list
 
 '''
 
