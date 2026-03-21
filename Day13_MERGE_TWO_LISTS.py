@@ -11,7 +11,7 @@ Step 5 : Print results
 
 '''
 
-# Take number of elemrnts for list1
+# Take number of elements for list1
 n1 = int(input("Enter the number of elements of list1 : "))
 list1 = []                                          # Create empty list1
 for i in range(n1):                                 # Loop runs n1 times
