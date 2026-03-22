@@ -10,7 +10,14 @@ Step 4 : Merge lists using + operator
 Step 5 : Print results
 
 '''
+# First input list
+lst = input("Enter elements separated by space: ").split()
 
+# Convert that input list into integers
+lst = [int(x) for x in lst]
+
+# Sort the list 
+lst.sort()
 # Take number of elements for list1
 n1 = int(input("Enter the number of elements of list1 : "))
 list1 = []                                          # Create empty list1

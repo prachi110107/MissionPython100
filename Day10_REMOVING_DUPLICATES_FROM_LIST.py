@@ -17,24 +17,33 @@ Step 4 : Add only unique elements to new list
 '''
 
 '''For string'''
-S=input("Enter a string : ")
-result = ""
-for ch in S :
-    if ch not in result :
-        result = result + ch
+S=input("Enter a string : ")     # Take string input
+result = ""                      # Create empty result string
+for ch in S :                    # Traverse each character
+    if ch not in result :        # Check if character is not already in result
+        result = result + ch     #  Add character to result
+
+# Print results
 print("Initial string : ", S)
 print("Final string after removing duplicates : ", result)
 
-'''For list'''
-N=int(input("Enter number of elements : "))
-numbers = ""
-for i in range(N):
-    num = int(input("Enter elements : "))
-    numbers.append(num)
-new_list = ""
-for num in numbers :
-    if num not in new_list:
+'''For list'''  
+# First input list
+lst = input("Enter elements separated by space: ").split()
+
+# Convert that input list into integers
+lst = [int(x) for x in lst]
+
+# Sort the list 
+lst.sort()
+
+new_list = []                              # Create empty list for unique elements
+for num in lst :                           # Traverse the sorted list
+    if num not in new_list:                # Add only if not already present
         new_list.append(num)
-print("Original list : ", N)
+        
+# Print results
+print("Original list : ", lst)
 print("Final list after removing duplicates : ", new_list)
    
+
