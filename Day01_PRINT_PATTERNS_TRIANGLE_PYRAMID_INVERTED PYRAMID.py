@@ -1,8 +1,22 @@
-'''Day14:- Matrix addition
+'''
+Day01:- To pint patters -> triangle , pyramid , inverted pyramid
 Difficulty:- Easy 
-Concept:- 2D Lists , Nested loops
+Concept:- Nested loops (for) , Pattern printing , Use of range() , String formatting (end="") , Logic building with rows & columns
 Approach:
-Step 1 : '''
+1. Triangle
+Outer loop → controls rows
+Inner loop → prints stars equal to row number
+2. Pyramid
+First inner loop → prints spaces
+Second inner loop → prints stars
+Stars follow pattern: 2*i - 1
+3. Inverted Pyramid
+Same as pyramid but rows go in reverse
+Stars decrease each row
+
+'''
+
+
 n = int(input("Enter number of rows : "))
 
 print("\n TRIANGLE :\n")
