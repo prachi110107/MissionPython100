@@ -16,29 +16,39 @@ Stars decrease each row
 
 '''
 
-
+# Take input from user
 n = int(input("Enter number of rows : "))
 
 print("\n TRIANGLE :\n")
+
+# Outer loop → controls rows
 for i in range(1, n + 1):
+    # Inner loop → prints stars
     for j in range(i):
-        print("*", end="")
-    print()
+        print("*", end="")           # Print stars in same line
+    print()                          # Move to next line
 
 
 print("\n PYRAMID :\n")
 for i in range(1, n + 1):
+    # Print spaces
     for j in range(n - i):
         print(" ", end="")
+    # Print stars
     for k in range(2 * i - 1):
         print("*", end="")
-    print()
+
+    print()                           # Next line
 
 
 print("\n INVERTED PYRAMID :\n")
+# Outer loop in reverse
 for i in range(n, 0, -1):
+    # Print spaces
     for j in range(n - i):
         print(" ", end="")
+    # Print stars
     for k in range(2 * i - 1):
         print("*", end="")
-    print()
+
+    print()                           # Next line
