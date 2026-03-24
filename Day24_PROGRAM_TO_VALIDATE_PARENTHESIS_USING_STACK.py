@@ -1,66 +1,48 @@
 '''
-Day22:- Implementing stack using list
+Day24:- Program to validate parenthesis using stack 
 Difficulty:- Medium
-Concept:- Stack = LIFO (Last In First Out)
-The last element inserted is the first one to be removed
-Basic Operations:
-Push → Add element
-Pop → Remove last element
-Peek → View top element
-Display → Show stack
+Concept:- We use Stack (LIFO) to check balanced parentheses
+Rules: Opening brackets → ( { [ → push into stack
+       Closing brackets → ) } ] → check and pop
 Approach
-Step 1 : Create an empty list (stack)
-Step 2 : Use append() for push
-Step 3 : Use pop() for pop
-Step 4 : Use [-1] for peek
-Step 5 : Use loop for menu-driven program
+Step 1 : Create empty stack
+Step 2 : Traverse string
+Step 3 : If opening bracket → push
+Step 4 : If closing bracket:
+         Check stack not empty
+         Check top matches
+         Pop
+Step 5 : After loop:
+         If stack empty → valid
+         Else → invalid
 
 '''
 
-# Create empty stack (list)
-stack = []
+expression = input("Enter expression : ")           # Input expression string
 
-# Run infinite loop for menu
-while True:
-    print("Stack Operations") 
-    print("1. Push")
-    print("2. Pop")
-    print("3. Peek")
-    print("4. Display")
-    print("5. Exit")
+stack = []                                          # create empty stack
 
-    # Step 3: Take user choice
-    choice = int(input("Enter your choice : "))
+pairs = { '(' : ')' , '{' : '}' , '[' : ']'}        # Define matching pairs
 
-    if choice == 1:
-        element = int(input("Enter element to push : "))
-        stack.append(element)                                 # add element to stack
-        print("Element pushed")                               # push operation
+for ch in expression :
+    if ch in "({[":                                 # If opening bracket → push
+        stack.append(ch)
 
-   
-    elif choice == 2:
-        if len(stack) == 0:
-            print("Stack is empty")
-        else:
-            removed = stack.pop()                              # remove last element
-            print("Popped element : ", removed)                # pop operation
+    elif ch in ")}]":                               # If closing bracket
 
 
-    elif choice == 3:
-        if len(stack) == 0:
-            print("Stack is empty")
-        else:
-            print("Top element : ", stack[-1])                  # last element , peek operation
+        if len(stack) == 0:                         # Check if stack is empty
+            print("Invalid Parenthesis")
+            break
+
+        top = stack.pop()                           # Check matching
+        if pairs[ch] != top:
+            print("Invalid Parenthesis")
+            break
 
 
-   
-    elif choice == 4:
-        print("Stack : ", stack)                                # display operation
-
-
-    elif choice == 5:
-        print("Exiting program")                                 # exit operation
-        break
-
+else:                                               #  Check final condition
+    if len(stack) == 0:
+        print("Valid Parenthesis")
     else:
-        print("Invalid choice")
+        print("Invalid Parenthesis")
