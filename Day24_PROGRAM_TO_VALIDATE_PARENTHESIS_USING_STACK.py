@@ -18,31 +18,41 @@ Step 5 : After loop:
 
 '''
 
-expression = input("Enter expression : ")           # Input expression string
+# Take input string
+expression = input("Enter expression: ")
 
-stack = []                                          # create empty stack
+# Create empty stack
+stack = []
 
-pairs = { '(' : ')' , '{' : '}' , '[' : ']'}        # Define matching pairs
+# Define matching pairs
+pairs = {')': '(', '}': '{', ']': '['}
 
-for ch in expression :
-    if ch in "({[":                                 # If opening bracket → push
+# Traverse each character
+for ch in expression:
+
+    # If opening bracket → push
+    if ch in "({[":
         stack.append(ch)
 
-    elif ch in ")}]":                               # If closing bracket
+    # If closing bracket
+    elif ch in ")}]":
 
-
-        if len(stack) == 0:                         # Check if stack is empty
+        # Check if stack is empty
+        if len(stack) == 0:
             print("Invalid Parenthesis")
             break
 
-        top = stack.pop()                           # Check matching
+        # Check matching
+        top = stack.pop()
         if pairs[ch] != top:
             print("Invalid Parenthesis")
             break
 
-
-else:                                               #  Check final condition
+# Check final condition
+else:
     if len(stack) == 0:
         print("Valid Parenthesis")
     else:
         print("Invalid Parenthesis")
+
+
