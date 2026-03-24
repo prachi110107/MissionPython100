@@ -1,18 +1,18 @@
 '''
 Day23:- Implementing queue using list
 Difficulty:- Medium
-Concept:- queue = FIFO (FIRST In First Out)
+Concept:- queue = FIFO (First In First Out)
 The first element inserted is the first one to be removed
 Basic Operations:
-Enqueue → Add element at end
-Dequeue → Remove element from front
-Peek → View first element
+Enqueue → Add element
+Dequeue → Remove front element
+Peek → Front element
 Display → Show queue
 Approach
 Step 1 : Create an empty list (queue)
-Step 2 : Use append() to enqueue
-Step 3 : Use pop() to dequeue
-Step 4 : Use [0] to peek
+Step 2 : Use Enqueue() for push
+Step 3 : Use Dequeue() for pop
+Step 4 : Use [0] for peek
 Step 5 : Use loop for menu-driven program
 
 '''
@@ -43,7 +43,7 @@ while True:
             print("queue is empty")
         else:
             removed = queue.pop()                              # remove front element
-            print("dequeued element : ", removed)               # dequeue operation
+            print("dequeued element : ", removed)              # dequeue operation
 
 
     elif choice == 3:
