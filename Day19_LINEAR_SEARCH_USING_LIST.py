@@ -11,6 +11,7 @@ Step 5 : After loop check flag
 
 '''
 
+
 # First input list
 lst = input("Enter elements separated by space: ").split()
 
