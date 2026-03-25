@@ -8,6 +8,7 @@ Step 2 : Compare with all next numbers
 Step 3 : If sum matches → print indices
 
 '''
+
 # Create a list of numbers
 nums = [11 , 5 , 25 , 28]
 # define target
