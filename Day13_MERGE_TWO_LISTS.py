@@ -10,7 +10,8 @@ Step 4 : Merge lists using + operator
 Step 5 : Print results
 
 '''
-git add .
+
+
 # First input list
 lst = input("Enter elements separated by space: ").split()
 
