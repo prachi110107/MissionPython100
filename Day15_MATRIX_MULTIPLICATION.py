@@ -14,6 +14,7 @@ Step 4 : Multiply row elements with column elements
 Step 5 : Add all products → store in result
 
 '''
+
 # Input number of rows
 rows = int(input("Enter number of rows: "))
 # Input number of columns
