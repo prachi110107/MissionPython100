@@ -9,6 +9,7 @@ Step 3 : Add corresponding elements → matrix1[i][j] + matrix2[i][j]
 Step 4 : Store result in same position
 
 '''
+
 # Input number of rows
 R = int(input("Enter number of rows : "))
 # Input number of columns
