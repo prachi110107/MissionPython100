@@ -16,6 +16,7 @@ Step 4 : Print final result
 
 '''
 
+
 n=int(input("Enter a number : "))                   # Ask user to enter a number
 
 if n < 0 :                                          # If entered number less then 0 then factorial does not exists
