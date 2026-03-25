@@ -10,6 +10,7 @@ Step 4 : Swap indices:
          transpose[j][i] = matrix[i][j]
 
 '''
+
 # Input number of rows
 rows = int(input("Enter number of rows: "))
 # Input number of columns
