@@ -17,6 +17,7 @@ Step 5 : Use loop for menu-driven program
 
 '''
 
+
 # Create empty queue (list)
 queue = []
 
