@@ -13,7 +13,6 @@ Step 5 : Recursive call on remaining string
 Step 6 : Print result
 
 '''
-
 def palindrome(n) :                                 # Defining recursive function
 
     if len(n) <= 1:                                 # Base case , palindrome
