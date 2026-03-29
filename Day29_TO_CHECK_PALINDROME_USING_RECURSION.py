@@ -22,38 +22,35 @@ def palindrome(n) :                                 # Defining recursive functio
     if n[0] != n[-1]:                               # Check first and last character , not palindrome
         return False                 
      
-    return palindrome(n[1:-1])                   # Recursive call 
+    return palindrome(n[1:-1])                      # Recursive call 
 
 
-# Take input from user it can be a number or string
-Value = input("Enter a number or string : ")
+Value = input("Enter a number or string : ")        # Take input from user it can be a number or string
 
-# Check if it is a number 
-if Value.isdigit():
+if Value.isdigit():                                 # Check if it is a number 
 
-    n = int(Value)                  # If yes , then convert it into an integer
+    n = int(Value)                                  # If yes , then convert it into an integer
     original = n
     reverse = 0
 
-    while n > 0:                    # Reverse number concept
+    while n > 0:                                    # Reverse number concept
         digit = n % 10     
         reverse = reverse * 10 + digit
         n = n // 10   
 
-    if original == reverse :        # Compare original and reverse
+    if original == reverse :                        # Compare original and reverse
         print("It is a palindrome number")
     else:
         print("It is NOT a palindrome number")
 
-else:                               # If input is a string
+else:                                               # If input is a string
     original = Value
     reverse = "" 
-    for ch in original:              # Reverse string using loop
-        reverse = ch + reverse       # add character in front
+    for ch in original:                             # Reverse string using loop
+        reverse = ch + reverse                      # add character in front
         
-
-# Compare reverse and original       
-    if original == reverse:
+      
+    if original == reverse:                         # Compare reverse and original 
         print("It is a Palindrome String")
     else:
         print("It is NOT a Palindrome String")
