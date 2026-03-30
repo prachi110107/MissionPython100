@@ -16,7 +16,6 @@ Step 5 : Use loop to print series
 
 '''
 
-
 def fibonacci(n) :                                 # Defining recursive function
 
     if n == 0  :                                   # Base case 
