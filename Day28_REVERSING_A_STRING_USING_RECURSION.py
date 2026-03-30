@@ -14,7 +14,6 @@ Step 5 : Print result
 
 '''
 
-
 string = input("Enter a string : ")              # Take input from user
 
 def reverse_string(str):                         # Define recursive function
