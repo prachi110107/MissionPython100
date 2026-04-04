@@ -15,6 +15,7 @@ Step 4 : Print max_sum
 
 '''
 
+
 # Ask user to give input
 arr = list(map(int, input("Enter elements separated by space: ").split()))
 
