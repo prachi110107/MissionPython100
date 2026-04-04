@@ -12,7 +12,6 @@ Step 4 : If element ≠ 0:
 Step 5 : Print updated list
 
 '''
-
 # Ask user to give input 
 arr = list(map(int, input("Enter elements separated by space: ").split()))
 
