@@ -9,6 +9,7 @@ Step 3 : Missing number = expected - actual
 
 '''
 
+
 # Ask user to give input
 arr = list(map(int, input("Enter elements separated by space : ").split()))
 
