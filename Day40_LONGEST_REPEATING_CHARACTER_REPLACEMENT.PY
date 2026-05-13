@@ -2,6 +2,7 @@
 Day40:- Longest Repeating Character Replacement
 Difficulty:- Hard
 Concept:- Sliding Window , Hash Map , Dictionary , Frequency Counting
+Approach:
 Step 1 : Use two pointers (left and right) to create a sliding window.
 Step 2 :  Store frequency of characters in a dictionary.
 Step 3 :  Find : window size - maximum frequency character
