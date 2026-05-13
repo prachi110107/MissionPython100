@@ -2,6 +2,7 @@
 Day41:- Longest Consecutive Sequence Using Set
 Difficulty:- Hard
 Concept:- Set Data Structure , Hashing , Sequence Traversal
+Approach:
 Step 1 : Store all numbers in a set for fast searching.
 Step 2 : Traverse each number in the set.
 Step 3 : Check if the number is the starting point of a sequence : num - 1 not in set
