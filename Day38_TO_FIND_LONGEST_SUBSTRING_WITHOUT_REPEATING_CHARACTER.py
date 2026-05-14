@@ -8,7 +8,7 @@ Step 2 : Use a set to store characters
 Step 3 : Initialize:
 left = 0
 max_length = 0
-Step 4 : Traverse with right pointer
+Step 4 : Traverse with right point
 Step 5 : If duplicate found:
 remove characters from left
 Step 6 : Update max length
