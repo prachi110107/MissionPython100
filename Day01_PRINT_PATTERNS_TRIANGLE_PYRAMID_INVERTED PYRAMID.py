@@ -16,6 +16,7 @@ Stars decrease each row
 
 '''
 
+
 # Take input from user
 n = int(input("Enter number of rows : "))
 
