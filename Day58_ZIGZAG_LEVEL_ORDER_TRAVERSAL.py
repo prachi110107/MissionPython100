@@ -1,8 +1,9 @@
 '''
 Day58:- ZIGZAG level order traversal
 Difficulty:- Hard
-Concept:- Binary tree , recursion , tree traversal
+Concept:- BFS , Queue , Alternate Reversal
 Approach:
-Step 1 : 
+Step 1 : Traverse level by level
+Step 2 : Reverse alternate levels
 
 '''
