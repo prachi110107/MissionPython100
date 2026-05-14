@@ -1,8 +1,11 @@
 '''
 Day66:- Detecting cycles in undirected graph
 Difficulty:- Hard
-Concept:- BFS , HashMap / Dictionary , Horizontal Distance
+Concept:- DFS , Visited Array , Parent Tracking
 Approach:
-Step 1 : 
+Step 1 : Traverse graph using DFS
+Step 2 : Mark visited nodes
+Step 3 : If visited neighbor is not parent : cycle exists
 
 '''
+
