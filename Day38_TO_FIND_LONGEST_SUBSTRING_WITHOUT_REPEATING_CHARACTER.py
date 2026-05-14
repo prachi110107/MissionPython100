@@ -16,6 +16,7 @@ Step 7 : Print result
 
 '''
 
+
 # Take input from user
 str = input("Enter a string : ")
 
