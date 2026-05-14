@@ -1,24 +1,47 @@
 '''
 Day73:- Dijkstra's algorithm
 Difficulty:- Hard
-Concept:- BFS , HashMap / Dictionary , Horizontal Distance
+Concept:- Greedy Algorithm , Priority Queue , Shortest Path
 Approach:
-Step 1 : 
+Step 1 : Start from source node
+Step 2 : Pick minimum distance node
+Step 3 : Update neighbor distances
+Step 4 : Repeat until all nodes processed
 
 '''
+import heapq
+
+graph = {
+    'A':[('B',1),('C',4)],
+    'B':[('C',2),('D',5)],
+    'C':[('D',1)],
+    'D':[]
+}
+
+distance = {
+    'A':0,
+    'B':float('inf'),
+    'C':float('inf'),
+    'D':float('inf')
+}
+
+pq = [(0,'A')]
+
+while pq:
+
+    dist, node = heapq.heappop(pq)
+
+    for neighbor, weight in graph[node]:
+
+        new_dist = dist + weight
+
+        if new_dist < distance[neighbor]:
+
+            distance[neighbor] = new_dist
+
+            heapq.heappush(pq, (new_dist, neighbor))
+
+print(distance)
 
 
 
-Day61:- To find number of island using graphs
-Day62:- Number of islands using BFS using graph
-Day63:- Flood fill algorithm DFS
-Day64:- Rotten oranges
-Day65:- cloning graph using DF concept 
-Day66:- Detecting cycles in undirected graph
-Day67:- Detecting cycles in a directed graph using backtracking and DF concept
-Day68:- Topological sorting
-Day69:- Topological sort using BFS (khan's algorithm)
-Day70:- Course schedule using khan's algorithm
-Day71:- Course schedule type 2 printing whole order of courses
-Day72:- Shortest path in unweighted graph
-Day73:-Dijkstra's algorithm
